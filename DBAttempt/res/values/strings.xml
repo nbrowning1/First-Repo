@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <string name="app_name">Calf Rearing</string>
+    <string name="title_activity_overview">Overview</string>
+    <string name="title_activity_add_cow">Add Cow</string>
+    <string name="title_activity_edit_cow_options">Edit</string>
+    <string name="title_activity_edit_cow">Edit</string>
+    <string name="title_activity_edit_cow_show">Edit Cow</string>
+    <string name="title_activity_delete_cow">Delete Calf</string>
+    <string name="title_activity_delete_cow_show">Delete Calf</string>
+    <string name="title_activity_search_results">Search</string>
+    <string name="title_activity_search_results_edit">Search</string>
+    <string name="title_activity_search_results_delete">Search</string>
+    <string name="title_activity_meal_record">Meal Records</string>
+    <string name="title_activity_milk_replacer">Milk Replacer</string>
+    <string name="title_activity_add_options">Add Options</string>
+    <string name="title_activity_add_medical_record">Add Medical Record</string>
+    <string name="title_activity_scroll_table_template">ScrollTableTemplate</string>
+    <string name="title_activity_add_dehorning_event">Add Dehorning Event</string>
+    <string name="title_activity_delete_all">Delete All...</string>
+    <string name="title_activity_delete_medical_record">Delete Medical Record</string>
+    <string name="title_activity_delete_dehorning_event">Delete Dehorning Event</string>
+    <string name="title_activity_search_results_delete_medical">Search</string>
+    <string name="title_activity_delete_meal_record">Delete Meal Record</string>
+    <string name="title_activity_edit_meal_record">Edit</string>
+    <string name="title_activity_add_meal_record">Add Meal Record</string>
+    <string name="title_activity_add_milk_replacer_record">Add Milk Replacer Record</string>
+    <string name="title_activity_edit_milk_replacer">Edit Milk Replacer</string>
+    <string name="title_activity_delete_milk_replacer">Delete Milk Replacer</string>
+    <string name="title_activity_monthly_report">Monthly Report</string>
+
+    <!-- Home Screen -->
+    <string name="label_overview">Overview</string>
+    <string name="button_calf_calf_overview">Calf Overview</string>
+    <string name="button_calf_meal_record">Meal Records</string>
+    <string name="button_calf_milk_replacer">Milk Replacer</string>
+    <string name="monthly_report">Monthly Report</string>
+
+    <!-- Overview Screen -->
+    <string name="action_edit">Edit</string>
+    <string name="action_add">Add</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search by Ear Tag No.</string>
+
+    <!-- Add Options Screen -->
+    <string name="activity_add_options_add_calf">Add calf</string>
+    <string name="activity_add_options_add_medical_record">Add Medical Record</string>
+    <string name="activity_add_options_add_dehorning_event">Add Dehorning Event</string>
+
+    <!-- Add Calf Screen -->
+    <string name="activity_add_cow_cow_ear_tag">Cow Ear Tag No.</string>
+    <string name="activity_add_cow_gender">Gender</string>
+    <string name="activity_add_cow_date_arrived">Date Arrived</string>
+    <string name="activity_add_cow_vaccination_date">Vaccination Date</string>
+    <string name="activity_add_cow_vaccination_date_hint">Vacc. Date</string>
+    <string name="activity_add_cow_bovivac_booster">Bovivac Booster</string>
+    <string name="activity_add_cow_ibr_rsp_booster">IBR/RSP Booster</string>
+    <string name="activity_add_cow_gender_male">Male</string>
+    <string name="activity_add_cow_gender_female">Female</string>
+    <string name="activity_add_cow_cow_ear_tag_hint">Cow Ear Tag</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="add_cow">Add Cow</string>
+
+    <!-- Add Medical Record Screen -->
+    <string name="activity_add_medical_record_cow_ear_tag">Cow Ear Tag No.</string>
+    <string name="activity_add_medical_record_details">Medication Details</string>
+    <string name="activity_add_medical_record_batch_no">Batch No.</string>
+    <string name="activity_add_medical_record_date_of_use">Date of Use</string>
+    <string name="activity_add_medical_record_quantity_used">Quantity Used</string>
+    <string name="activity_add_medical_record_doctor">Doctor</string>
+    <string name="activity_add_medical_record_comments">Comments</string>
+    <string name="add_record">Add Record</string>
+
+    <!-- Add Dehorning Event Screen -->
+    <string name="activity_add_dehorning_event_group_ref">Group Ref.</string>
+    <string name="activity_add_dehorning_event_date_dehorned">Date Dehorned</string>
+    <string name="activity_add_dehorning_event_number_dehorned">No. Dehorned</string>
+    <string name="activity_add_dehorning_event_d_caine">D-Caine</string>
+    <string name="add_event">Add Event</string>
+
+    <!-- Add Meal Record Screen -->
+    <string name="activity_add_meal_record_purchase_date">Purchase Date</string>
+    <string name="activity_add_meal_record_food_name">Food Name</string>
+    <string name="activity_add_meal_record_supplier">Supplier</string>
+    <string name="activity_add_meal_record_invoice_no">Invoice No.</string>
+    <string name="activity_add_meal_record_quantity">Quantity</string>
+    <string name="activity_add_meal_record_groups_fed">Groups Fed</string>
+
+    <!-- Add Milk Replacer Record Screen -->
+    <string name="activity_add_milk_record_purchase_date">Purchase Date</string>
+    <string name="activity_add_milk_record_milk_name">Milk Name</string>
+    <string name="activity_add_milk_record_manufacturer">Manufacturer</string>
+    <string name="activity_add_milk_record_supplier">Supplier</string>
+    <string name="activity_add_milk_record_invoice_no">Invoice No.</string>
+    <string name="activity_add_milk_record_quantity">Quantity</string>
+
+    <!-- Edit Calf Screen -->
+    <string name="activity_edit_cow_edit_cow">Edit Calf</string>
+    <string name="activity_edit_cow_delete_cow">Delete \n Calf</string>
+    <string name="activity_edit_cow_delete_medical_record">Delete Medical Record</string>
+    <string name="activity_edit_cow_delete_dehorning_event">Delete Dehorning Event</string>
+    <string name="activity_edit_cow_delete_all">Delete all...</string>
+
+    <!-- Delete All Screen -->
+    <string name="activity_edit_cow_delete_all_dehorning_events">Delete All Dehorning Events</string>
+    <string name="activity_edit_cow_delete_all_medical_records">Delete All Medical Records</string>
+    <string name="activity_edit_cow_delete_all_cows">Delete All Calves</string>
+
+    <!-- Edit Calf Show Screen -->
+    <string name="activity_edit_cow_cow_ear_tag">Cow Ear Tag No.</string>
+    <string name="activity_edit_cow_gender">Gender</string>
+    <string name="activity_edit_cow_date_arrived">Date Arrived</string>
+    <string name="activity_edit_cow_vaccination_date">Vaccination Date</string>
+    <string name="activity_edit_cow_bovivac_booster">Bovivac Booster</string>
+    <string name="activity_edit_cow_ibr_rsp_booster">IBR/RSP Booster</string>
+    <string name="activity_edit_cow_date_moved">Date Moved Away</string>
+    <string name="activity_edit_cow_moved_to">Moved To</string>
+    <string name="activity_edit_cow_submit">Edit Cow</string>
+
+    <!-- Edit Meal Record Screen -->
+    <string name="activity_edit_meal_record_delete">Delete Meal Record</string>
+    <string name="activity_edit_meal_record_delete_all">Delete All Meal Records</string>
+
+    <!-- Edit Milk Record Screen -->
+    <string name="activity_edit_milk_record_delete">Delete Milk Record</string>
+    <string name="activity_edit_milk_record_delete_all">Delete All Milk Records</string>
+    
+    <!-- Monthly Report Screen -->
+    <string name="activity_monthly_report_title">Monthly Report For Previous Month</string>
+    <string name="activity_monthly_report_total_calves">Total Calves on Site</string>
+    <string name="activity_monthly_report_cheap_calves">50p Calves on Site</string>
+    <string name="activity_monthly_report_expensive_calves">85p Calves on Site</string>
+    <string name="activity_monthly_report_number_dehorned">No. Dehorned</string>
+    <string name="activity_monthly_report_number_moved">No. Moved</string>
+    <string name="activity_monthly_report_number_died">No. Died</string>
+    <string name="activity_monthly_report_total_intake">Total Intake</string>
+
+    <string-array name="activity_edit_cow_moved_to_locations">
+        <item>---</item>
+        <item>Castledillion</item>
+        <item>Millisle</item>
+        <item>Died</item>
+    </string-array>
+    <string-array name="activity_add_meal_record_food_name">
+        <item>CCR + D</item>
+        <item>SHN + D</item>
+        <item>HN + D</item>
+    </string-array>
+    <string-array name="activity_add_meal_record_supplier">
+        <item>Mason\'s</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="activity_add_meal_record_groups_fed">
+        <item>&lt; 14 weeks</item>
+        <item>&gt; 14 weeks</item>
+    </string-array>
+
+    <string name="hello_world">Hello World!</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+</resources>

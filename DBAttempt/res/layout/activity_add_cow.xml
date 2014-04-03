@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_gravity="center_vertical|center_horizontal"
+    tools:context=".AddCowActivity" >
+
+    <TextView 
+        android:id="@+id/cow_ear_tag_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_add_cow_cow_ear_tag" />
+    
+    <EditText
+        android:id="@+id/cow_ear_tag_text_entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/cow_ear_tag_label"
+        android:layout_alignBaseline="@id/cow_ear_tag_label"
+        android:hint="@string/activity_add_cow_cow_ear_tag_hint"
+        android:maxLines="1"
+        android:inputType="number"/>
+    
+    <TextView 
+        android:id="@+id/cow_gender_label"
+        android:layout_below="@id/cow_ear_tag_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_add_cow_gender" />
+    
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/cow_ear_tag_text_entry"
+        android:layout_below="@id/cow_ear_tag_label"
+        android:layout_alignTop="@id/cow_gender_label"
+        android:orientation="horizontal"  >
+        <RadioButton 
+            android:id="@+id/radio_button_male"
+         	android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+           	android:text="@string/activity_add_cow_gender_male"/>
+    	<RadioButton 
+    	    android:id="@+id/radio_button_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_add_cow_gender_female"/>
+    </RadioGroup>
+    
+    <!-- Date Arrived with calendar -->
+    
+    <TextView 
+        android:id="@+id/cow_date_arrived_label" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cow_gender_label"
+        android:layout_marginTop="50dp"
+        android:text="@string/activity_add_cow_date_arrived" />
+    
+    <Button 
+        android:id="@+id/cow_date_arrived_date_button"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="@string/pick_date" 
+    	android:layout_below="@id/cow_gender_label"
+    	android:layout_alignLeft="@id/cow_ear_tag_text_entry"
+    	android:layout_alignBaseline="@id/cow_date_arrived_label"
+   	 	android:onClick="showDateArrivedDatePickerDialog" />
+    
+    <TextView 
+        style="@android:style/Widget.EditText"
+        android:id="@+id/cow_date_arrived_show"
+        android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_toRightOf="@id/cow_date_arrived_date_button"
+    	android:layout_alignBaseline="@id/cow_date_arrived_date_button" 
+    	android:hint="@string/activity_add_cow_date_arrived" />
+    
+    <!-- Vaccination Date with calendar -->
+    
+    <TextView 
+        android:id="@+id/cow_vaccination_date_label" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cow_date_arrived_label"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_add_cow_vaccination_date" />
+    
+    <Button 
+        android:id="@+id/cow_vaccination_date_date_button"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="@string/pick_date" 
+    	android:layout_below="@id/cow_date_arrived_label"
+    	android:layout_alignLeft="@id/cow_ear_tag_text_entry"
+    	android:layout_alignBaseline="@id/cow_vaccination_date_label"
+   	 	android:onClick="showVaccinationDateDatePickerDialog" />
+    
+    <TextView 
+        style="@android:style/Widget.EditText"
+        android:id="@+id/cow_vaccination_date_show"
+        android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/cow_vaccination_date_date_button"
+    	android:layout_alignBaseline="@id/cow_vaccination_date_date_button"
+    	android:hint="@string/activity_add_cow_vaccination_date_hint" />
+        
+	<!-- Bovivac Booster Date with calendar -->
+    
+    <TextView 
+        android:id="@+id/cow_bovivac_booster_date_label" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cow_vaccination_date_label"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_add_cow_bovivac_booster" />
+    
+    <Button 
+        android:id="@+id/cow_bovivac_booster_date_button"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="@string/pick_date" 
+    	android:layout_below="@id/cow_vaccination_date_label"
+    	android:layout_alignLeft="@id/cow_ear_tag_text_entry"
+    	android:layout_alignBaseline="@id/cow_bovivac_booster_date_label"
+   	 	android:onClick="showBovivacBoosterDatePickerDialog" />
+    
+    <TextView 
+        android:id="@+id/cow_bovivac_booster_show"
+        android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_toRightOf="@id/cow_bovivac_booster_date_button"
+    	android:layout_alignBaseline="@id/cow_bovivac_booster_date_button" />
+    
+    <!-- IBR & RSP Booster Date with calendar -->
+    
+    <TextView 
+        android:id="@+id/cow_ibr_rsp_booster_date_label" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cow_bovivac_booster_date_label"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_add_cow_ibr_rsp_booster" />
+    
+    <Button 
+        android:id="@+id/cow_ibr_rsp_booster_date_button"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="@string/pick_date" 
+    	android:layout_below="@id/cow_bovivac_booster_date_label"
+    	android:layout_alignLeft="@id/cow_ear_tag_text_entry"
+    	android:layout_alignBaseline="@id/cow_ibr_rsp_booster_date_label"
+   	 	android:onClick="showIBRAndRSPBoosterDatePickerDialog" />
+    
+    <TextView 
+        android:id="@+id/cow_ibr_rsp_booster_show"
+        android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_toRightOf="@id/cow_ibr_rsp_booster_date_button"
+    	android:layout_alignBaseline="@id/cow_ibr_rsp_booster_date_button" />
+    
+    <!-- Submit button -->
+    
+    <Button 
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="@string/add_cow"
+    	android:layout_alignParentBottom="true"
+    	android:layout_centerHorizontal="true" 
+    	android:onClick="validateCreateCowFormEntry"/>
+    
+</RelativeLayout>

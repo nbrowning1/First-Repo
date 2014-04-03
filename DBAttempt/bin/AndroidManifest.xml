@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dbattempt"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cow_update"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme" >
+        <activity
+            android:name="com.example.dbattempt.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.OverviewActivity"
+            android:label="@string/title_activity_overview"
+            android:parentActivityName="com.example.dbattempt.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.MainActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.example.dbattempt.searchresults.SearchResultsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.searchresults.SearchResultsActivity"
+            android:label="@string/title_activity_search_results"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.dbattempt.OverviewActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.OverviewActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.AddCowActivity"
+            android:label="@string/title_activity_add_cow"
+            android:parentActivityName="com.example.dbattempt.AddOptionsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.AddOptionsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.EditCowOptionsActivity"
+            android:label="@string/title_activity_edit_cow_options"
+            android:parentActivityName="com.example.dbattempt.OverviewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.OverviewActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.EditCowActivity"
+            android:label="@string/title_activity_edit_cow"
+            android:parentActivityName="com.example.dbattempt.EditCowOptionsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.EditCowOptionsActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.example.dbattempt.searchresults.SearchResultsEditActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.EditCowShowActivity"
+            android:label="@string/title_activity_edit_cow_show"
+            android:parentActivityName="com.example.dbattempt.EditCowActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.EditCowActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.DeleteCowActivity"
+            android:label="@string/title_activity_delete_cow"
+            android:parentActivityName="com.example.dbattempt.EditCowOptionsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.EditCowOptionsActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.example.dbattempt.searchresults.SearchResultsDeleteCowActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.searchresults.SearchResultsEditActivity"
+            android:label="@string/title_activity_search_results_edit"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.dbattempt.EditCowActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.EditCowActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.searchresults.SearchResultsDeleteCowActivity"
+            android:label="@string/title_activity_search_results_delete"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.dbattempt.DeleteCowActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.DeleteCowActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.MealRecordActivity"
+            android:label="@string/title_activity_meal_record"
+            android:parentActivityName="com.example.dbattempt.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.MilkReplacerActivity"
+            android:label="@string/title_activity_milk_replacer"
+            android:parentActivityName="com.example.dbattempt.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.AddOptionsActivity"
+            android:label="@string/title_activity_add_options"
+            android:parentActivityName="com.example.dbattempt.OverviewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.OverviewActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.AddMedicalRecordActivity"
+            android:label="@string/title_activity_add_medical_record"
+            android:parentActivityName="com.example.dbattempt.AddOptionsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.AddOptionsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.template.ScrollTableTemplate"
+            android:label="@string/title_activity_scroll_table_template" >
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.AddDehorningEventActivity"
+            android:label="@string/title_activity_add_dehorning_event"
+            android:parentActivityName="com.example.dbattempt.AddOptionsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.AddOptionsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.DeleteAllActivity"
+            android:label="@string/title_activity_delete_all"
+            android:parentActivityName="com.example.dbattempt.EditCowOptionsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.EditCowOptionsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.DeleteMedicalRecordActivity"
+            android:label="@string/title_activity_delete_medical_record"
+            android:parentActivityName="com.example.dbattempt.EditCowOptionsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.EditCowOptionsActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.example.dbattempt.searchresults.SearchResultsDeleteMedicalActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.DeleteDehorningEventActivity"
+            android:label="@string/title_activity_delete_dehorning_event"
+            android:parentActivityName="com.example.dbattempt.EditCowOptionsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.EditCowOptionsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.searchresults.SearchResultsDeleteMedicalActivity"
+            android:label="@string/title_activity_search_results_delete_medical"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.dbattempt.DeleteMedicalRecordActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.DeleteMedicalRecordActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.DeleteMealRecordActivity"
+            android:label="@string/title_activity_delete_meal_record"
+            android:parentActivityName="com.example.dbattempt.EditMealRecordActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.EditMealRecordActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.EditMealRecordActivity"
+            android:label="@string/title_activity_edit_meal_record"
+            android:parentActivityName="com.example.dbattempt.MealRecordActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.MealRecordActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.AddMealRecordActivity"
+            android:label="@string/title_activity_add_meal_record"
+            android:parentActivityName="com.example.dbattempt.MealRecordActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.MealRecordActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.AddMilkReplacerRecordActivity"
+            android:label="@string/title_activity_add_milk_replacer_record"
+            android:parentActivityName="com.example.dbattempt.MilkReplacerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.MilkReplacerActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.EditMilkReplacerActivity"
+            android:label="@string/title_activity_edit_milk_replacer"
+            android:parentActivityName="com.example.dbattempt.MilkReplacerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.MilkReplacerActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.DeleteMilkReplacerActivity"
+            android:label="@string/title_activity_delete_milk_replacer"
+            android:parentActivityName="com.example.dbattempt.EditMilkReplacerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.EditMilkReplacerActivity" />
+        </activity>
+        <activity
+            android:name="com.example.dbattempt.MonthlyReportActivity"
+            android:label="@string/title_activity_monthly_report"
+            android:parentActivityName="com.example.dbattempt.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dbattempt.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

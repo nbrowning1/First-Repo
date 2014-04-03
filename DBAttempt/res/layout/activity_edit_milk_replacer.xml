@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditMilkReplacerActivity" >
+
+    <Button 
+        android:id="@+id/delete_milk_record_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activity_edit_milk_record_delete"
+        android:onClick="deleteMilkRecords"
+        />
+    
+    <Button
+        android:id="@+id/delete_all_milk_records_button" 
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/delete_milk_record_button"
+        android:text="@string/activity_edit_milk_record_delete_all"
+        android:onClick="deleteAllMilkRecords"
+        />
+
+</RelativeLayout>

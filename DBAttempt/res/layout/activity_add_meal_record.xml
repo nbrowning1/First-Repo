@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddMealRecordActivity" >
+
+    <!-- Purchase Date -->
+    <TextView 
+        android:id="@+id/meal_record_purchase_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_add_meal_record_purchase_date" />
+    
+    <Button 
+        android:id="@+id/meal_record_purchase_date_button"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="@string/pick_date" 
+    	android:layout_marginLeft="10dp"
+    	android:layout_toRightOf="@id/meal_record_purchase_date_label"
+    	android:layout_alignBaseline="@id/meal_record_purchase_date_label"
+   	 	android:onClick="showPurchaseDateDatePickerDialog" />
+    
+    <TextView 
+        style="@android:style/Widget.EditText"
+        android:id="@+id/meal_record_purchase_date_show"
+        android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_toRightOf="@id/meal_record_purchase_date_button"
+    	android:layout_alignBaseline="@id/meal_record_purchase_date_button" 
+    	android:hint="@string/activity_add_meal_record_purchase_date" />
+    
+    <!-- Food Name -->
+    <TextView 
+        android:id="@+id/meal_record_food_name_label"
+        android:layout_below="@id/meal_record_purchase_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_add_meal_record_food_name" />
+    
+    <Spinner
+   		android:id="@+id/meal_record_food_name_spinner"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:layout_alignBaseline="@id/meal_record_food_name_label"
+    	android:layout_below="@id/meal_record_purchase_date_button"
+        android:layout_alignLeft="@id/meal_record_purchase_date_button" />
+    
+    <!-- Supplier -->
+    <TextView 
+        android:id="@+id/meal_record_supplier_label"
+        android:layout_below="@id/meal_record_food_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_add_meal_record_supplier" />
+    
+    <Spinner
+   		android:id="@+id/meal_record_supplier_spinner"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:layout_alignBaseline="@id/meal_record_supplier_label"
+    	android:layout_below="@id/meal_record_food_name_spinner"
+        android:layout_alignLeft="@id/meal_record_purchase_date_button" />
+    
+    <!-- Invoice No. -->
+    <TextView 
+        android:id="@+id/meal_record_invoice_label"
+        android:layout_below="@id/meal_record_supplier_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_add_meal_record_invoice_no" />
+    
+    <EditText
+        android:id="@+id/meal_record_invoice_entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/meal_record_invoice_label"
+        android:layout_alignLeft="@id/meal_record_purchase_date_button"
+        android:hint="@string/activity_add_meal_record_invoice_no"
+        android:singleLine="true"
+        android:maxLines="1"/>
+    
+    <!-- Quantity -->
+    <TextView 
+        android:id="@+id/meal_record_quantity_label"
+        android:layout_below="@id/meal_record_invoice_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_add_meal_record_quantity" />
+    
+    <EditText
+        android:id="@+id/meal_record_quantity_entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/meal_record_quantity_label"
+        android:layout_alignLeft="@id/meal_record_purchase_date_button"
+        android:hint="@string/activity_add_meal_record_quantity"
+        android:maxLines="1"
+        android:inputType="number"/>
+        
+	<!-- Groups Fed -->
+    <TextView 
+        android:id="@+id/meal_record_groups_fed_label"
+        android:layout_below="@id/meal_record_quantity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_add_meal_record_groups_fed" />
+    
+    <Spinner
+   		android:id="@+id/meal_record_groups_fed_spinner"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:layout_alignBaseline="@id/meal_record_groups_fed_label"
+    	android:layout_below="@id/meal_record_quantity_entry"
+        android:layout_alignLeft="@id/meal_record_purchase_date_button" />
+    
+    <!-- Submit button -->
+    
+    <Button 
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="@string/add_record"
+    	android:layout_alignParentBottom="true"
+    	android:layout_centerHorizontal="true" 
+    	android:onClick="validateCreateMealRecordEntry"/>
+
+</RelativeLayout>
